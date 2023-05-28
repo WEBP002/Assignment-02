@@ -114,13 +114,23 @@ nav ul li a:hover, nav ul li a.active
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
-    width: auto;
-    background-color: var(--orang-color-dark);
+    /* padding: 5px; */
+    width: 350px;
+    flex-direction: row;
+    background-color: var(--yellow-color);
     color: var(--dark-color);
-    border-radius: 8px;
+    border-radius: 5000px;
     text-decoration: none;
     text-align: center;
+    /* padding-left: 10%; */
+    /* padding-right: 10%; */
+
+    padding: 22px 50px 24px;
+    gap: 70px;
+
+    width: 350px;
+    height: 78px;
+
 
     font-style: normal;
     font-weight: 700;
@@ -128,13 +138,20 @@ nav ul li a:hover, nav ul li a.active
     line-height: 32px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 85px 80px rgba(64, 127, 85, 0.08), 0px 25.625px 24.1177px rgba(64, 127, 85, 0.0521271), 0px 10.6433px 10.0172px rgba(64, 127, 85, 0.04), 0px 3.84948px 3.62304px rgba(64, 127, 85, 0.0278729);
+    inherits: true;
 }
-.btn:hover
+.btn span
+{
+    background-color: inherit
+}
+.btn:hover,
+.btn:hover .material-symbols-outlined
 {
     background-color: var(--orange-light-color);
     color: var(--white-color);
-}
-.btn.green-btn
+} 
+
+/* .btn.green-btn
 {
     background-color: var(--green-color);
 }
@@ -154,16 +171,16 @@ nav ul li a:hover, nav ul li a.active
 .btn-lg
 {
     /* padding: 10px; */
-    min-width: 200px;
-    font-weight: 600;
+    /* min-width: 200px; */
+    /* font-weight: 600;
     border-radius: 16px;
-    min-width: 250px;
-}
+    width: 250px;
+} */
 
 .br-large
 {
     border-radius: 5000px;
-}
+} */
 
 .orange-color
 {
@@ -271,8 +288,9 @@ nav ul li a:hover, nav ul li a.active
     
 }
 
-#banner .banner-btn div
+#banner .banner-btn
 {
+    /* background-color: var(--yellow-color); */
     display: flex;
     flex-direction: row;  /* Make the main axis horizontal */
     /* justify-content:space-between; */
@@ -286,14 +304,14 @@ nav ul li a:hover, nav ul li a.active
 
 }
 
-.material-symbols-outlined {
+/* .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
     'opsz' 48;
     background-color: var(--yellow-color);
-}
+} */
   
 
 /* #banner .banner-btn::after
