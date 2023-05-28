@@ -179,6 +179,9 @@ nav ul li a:hover, nav ul li a.active
     text-align: center;
     padding-top: 148px;
     margin-bottom: 20px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 #banner .banner-content
@@ -216,30 +219,34 @@ nav ul li a:hover, nav ul li a.active
 {
     display: flex;
     flex-direction: row;  /* Make the main axis horizontal */
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;  /* Wrap the items onto the next line if they don't fit */
     flex: 1 0 auto;  /* Flex-grow is set to 1, flex-shrink is set to 0, flex-basis is set to auto */
-    max-width: fit-content;
+    /* max-width: fit-content; */
     position: relative;
     order: 2;  /* Will be placed second */
 }
 
 #banner .banner-check div
 {
-    flex: 0 1 calc(33% - 10px);  /* The divs will take up 33% of the space */
+    flex: initial;  /* The divs will take up 33% of the space */
     margin: 5px; 
     /* rest of the styling */
     width:fit-content;
     background-color: var(--white-color);
     /* box-shadow: 0px -2px 128px rgba(5, 142, 110, 0.14); */
     border-radius: 16px;
-    padding: 12px 12px 12px 80px;
+    /* padding: 12px 12px 12px 80px; */
     position: relative;
 }
 
 #banner .banner-check div h5
 {
-    width: fit-content;
+    /* align-self: center;
+    align-items: center;
+    align-content: center;
+    text-align: center; */
+    /* width: fit-content; */
     background-color: var(--white-color);
 }
 
@@ -247,7 +254,7 @@ nav ul li a:hover, nav ul li a.active
 #banner .banner-check div::before {
     font-family: 'Material Symbols Outlined';
     content: "\e876";
-    position: absolute;
+    position:absolute;
     top: 30px;
     width: 50px;
     height:fit-content;
