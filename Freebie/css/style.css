@@ -173,7 +173,7 @@ nav ul li a:hover, nav ul li a.active
 #banner 
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
@@ -212,13 +212,40 @@ nav ul li a:hover, nav ul li a.active
     color: #6C6C6C;
 }
 
-#banner .banner-button
+#banner .banner-check
 {
-    width: 100%;
+    display: flex;              /* this will arrange the divs inside banner-check horizontally */
+    justify-content: space-between;
+    flex-wrap: wrap;            /* this will wrap the elements to the next line if they don't fit into one line */
+    width: 100%;                /* adjust as per your need */
     max-width: 500px;
     position: relative;
-    text-align: right;
-    order: 0;
+    order: 1;                   /* set this to 1 to make sure that it comes after banner-content when the parent is a flex container */
+}
+
+#banner .banner-check div
+{
+    background-color: var(--white-color);
+    box-shadow: 0px -2px 128px rgba(5, 142, 110, 0.14);
+    border-radius: 16px;
+    padding: 12px 12px 12px 80px;
+    position: relative;
+}
+
+#banner .banner-check div::before {
+    font-family: 'Material Symbols Outlined';
+    content: "\e876";
+    position: absolute;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 52px;
+    background-color: var(--gren-color-light);
+    left: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    color: var(--white-color);   
 }
 /* #banner .banner-image .status
 {
@@ -328,21 +355,7 @@ nav ul li a:hover, nav ul li a.active
 }
 
 
-#purpose .purpose-content .p-list div::before {
-    font-family: 'Material Symbols Outlined';
-    content: "\e876";
-    position: absolute;
-    top: 30px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 52px;
-    background-color: var(--gren-color-light);
-    left: 10px;
-    font-size: 30px;
-    border-radius: 10px;
-    color: var(--white-color);   
-}
+
 
 
 
