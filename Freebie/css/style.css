@@ -128,7 +128,7 @@ nav ul li a:hover, nav ul li a.active
     padding: 22px 50px 24px;
     gap: 70px;
 
-    width: 350px;
+    width: auto;
     height: 78px;
 
 
@@ -141,7 +141,7 @@ nav ul li a:hover, nav ul li a.active
 }
 .btn span
 {
-    background-color: inherit
+    background-color: inherit;
 }
 .btn:hover
 {
@@ -296,7 +296,7 @@ nav ul li a:hover, nav ul li a.active
     flex: 1 0 auto;  /* Flex-grow is set to 1, flex-shrink is set to 0, flex-basis is set to auto */
     margin-top: 60px;
     position: relative;
-    width: 350px;
+    width: auto;
     height: 70px;
 
 
