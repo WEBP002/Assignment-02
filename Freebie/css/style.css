@@ -115,7 +115,7 @@ nav ul li a:hover, nav ul li a.active
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    min-width: 102px;
+    width: auto;
     background-color: var(--orang-color-dark);
     color: var(--dark-color);
     border-radius: 8px;
@@ -153,7 +153,7 @@ nav ul li a:hover, nav ul li a.active
 }
 .btn-lg
 {
-    padding: 10px;
+    /* padding: 10px; */
     min-width: 200px;
     font-weight: 600;
     border-radius: 16px;
@@ -271,21 +271,30 @@ nav ul li a:hover, nav ul li a.active
     
 }
 
-#banner .banner-btn
+#banner .banner-btn div
 {
     display: flex;
     flex-direction: row;  /* Make the main axis horizontal */
-    justify-content: center;
+    /* justify-content:space-between; */
     flex-wrap: wrap;  /* Wrap the items onto the next line if they don't fit */
     flex: 1 0 auto;  /* Flex-grow is set to 1, flex-shrink is set to 0, flex-basis is set to auto */
     margin-top: 60px;
     position: relative;
-    
     width: 350px;
     height: 70px;
 
-    
+
 }
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    background-color: var(--yellow-color);
+}
+  
 
 /* #banner .banner-btn::after
 {
