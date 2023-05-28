@@ -7,10 +7,14 @@
     --orange-lighter-color: #F0D9CA;
     --green-color: #407F55  ;
     --gren-color-light: #058E6E;
-    --dark-color: #070917;
     --gray-color: #C4C4C4;
-    --light-color: #e8f7fb;
     --white-color: #fff;
+
+    --beige-lighter-color: #fffaeb;
+    --beige-color: #feedbc;
+    --beige-light-color: #fff6da;
+    --dark-color: #262626;
+    --orange-color: #ffbb45;
 }
 
 *, *::before, *::after{
@@ -45,7 +49,7 @@ h1,h2,h3,h4,h5,h6{
 }
 header
 {
-  
+    display: flex;
     padding: 20px 0;
     border-bottom: var(--gray-color) solid 1px;
     margin-bottom: 20px;
@@ -53,7 +57,16 @@ header
 }
 .logo
 {
-   width: 200px;
+    width: 127px;
+    height: 63px;
+}
+.frame
+{
+    align-self: flex-end;
+    width: 67px;
+    height: 24px;
+    right: 0px;
+    top: 19.5px;
 }
 
 nav {
