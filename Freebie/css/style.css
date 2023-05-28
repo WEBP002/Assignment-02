@@ -111,17 +111,21 @@ nav ul li a:hover, nav ul li a.active
 
 .btn
 {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 5px;
     min-width: 102px;
     background-color: var(--orang-color-dark);
-    color: var(--white-color);
+    color: var(--dark-color);
     border-radius: 8px;
     text-decoration: none;
     text-align: center;
 
-    font-size: 1rem;
-    font-weight: 500;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 85px 80px rgba(64, 127, 85, 0.08), 0px 25.625px 24.1177px rgba(64, 127, 85, 0.0521271), 0px 10.6433px 10.0172px rgba(64, 127, 85, 0.04), 0px 3.84948px 3.62304px rgba(64, 127, 85, 0.0278729);
 }
@@ -280,16 +284,22 @@ nav ul li a:hover, nav ul li a.active
     width: 350px;
     height: 70px;
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
+    
 }
 
-#banner .banner-btn a
+/* #banner .banner-btn::after
 {
-    text-decoration: none;
-}
+    position: absolute;
+    font-family: 'Segoe UI';
+    content: "\e2794";
+    /* border: var(--dark-color); 
+    background-color: var(--yellow-color);
+    font-size: 24.96px;
+    border-radius: 50px;
+    color: var(--dark-color);
+} 
+*/
+
 
 /* #banner .banner-image .status
 {
