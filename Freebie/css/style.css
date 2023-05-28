@@ -173,21 +173,21 @@ nav ul li a:hover, nav ul li a.active
 #banner 
 {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;  /* Make the main axis vertical */
+    justify-content: center;
+    align-items: center;  /* Align the items from the top */
     text-align: center;
-    /* height: 646px; */
     padding-top: 148px;
     margin-bottom: 20px;
- 
 }
+
 #banner .banner-content
 {
-    width: 100%;
+    flex: 1 0 auto;  /* Flex-grow is set to 1, flex-shrink is set to 0, flex-basis is set to auto */
     max-width: 500px;
-    order: 0;
+    order: 1;  /* Will be placed first */
 }
+
 #banner .banner-content h1
 {
     font-size: 3rem;
@@ -214,23 +214,35 @@ nav ul li a:hover, nav ul li a.active
 
 #banner .banner-check
 {
-    display: flex;              /* this will arrange the divs inside banner-check horizontally */
+    display: flex;
+    flex-direction: row;  /* Make the main axis horizontal */
     justify-content: space-between;
-    flex-wrap: wrap;            /* this will wrap the elements to the next line if they don't fit into one line */
-    width: 100%;                /* adjust as per your need */
-    max-width: 500px;
+    flex-wrap: wrap;  /* Wrap the items onto the next line if they don't fit */
+    flex: 1 0 auto;  /* Flex-grow is set to 1, flex-shrink is set to 0, flex-basis is set to auto */
+    max-width: fit-content;
     position: relative;
-    order: 1;                   /* set this to 1 to make sure that it comes after banner-content when the parent is a flex container */
+    order: 2;  /* Will be placed second */
 }
 
 #banner .banner-check div
 {
+    flex: 0 1 calc(33% - 10px);  /* The divs will take up 33% of the space */
+    margin: 5px; 
+    /* rest of the styling */
+    width:fit-content;
     background-color: var(--white-color);
-    box-shadow: 0px -2px 128px rgba(5, 142, 110, 0.14);
+    /* box-shadow: 0px -2px 128px rgba(5, 142, 110, 0.14); */
     border-radius: 16px;
     padding: 12px 12px 12px 80px;
     position: relative;
 }
+
+#banner .banner-check div h5
+{
+    width: fit-content;
+    background-color: var(--white-color);
+}
+
 
 #banner .banner-check div::before {
     font-family: 'Material Symbols Outlined';
@@ -238,7 +250,7 @@ nav ul li a:hover, nav ul li a.active
     position: absolute;
     top: 30px;
     width: 50px;
-    height: 50px;
+    height:fit-content;
     text-align: center;
     line-height: 52px;
     background-color: var(--gren-color-light);
