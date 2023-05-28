@@ -14,13 +14,14 @@
     --beige-color: #feedbc;
     --beige-light-color: #fff6da;
     --dark-color: #262626;
-    --orange-color: #ffbb45;
+    --orange-color: #f9b800;
 }
 
 *, *::before, *::after{
    
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    background-color: var(--beige-lighter-color);
 }
 
 body{
@@ -50,7 +51,8 @@ h1,h2,h3,h4,h5,h6{
 header
 {
     display: flex;
-    padding: 20px 0;
+    justify-content: space-between;
+    /* padding: 20px 0; */
     border-bottom: var(--gray-color) solid 1px;
     margin-bottom: 20px;
     width: 100%;
@@ -58,13 +60,11 @@ header
 .logo
 {
     width: 127px;
-    height: 63px;
 }
 .frame
 {
-    align-self: flex-end;
+    align-self: center;
     width: 67px;
-    height: 24px;
     right: 0px;
     top: 19.5px;
 }
@@ -162,7 +162,7 @@ nav ul li a:hover, nav ul li a.active
 
 .orange-color
 {
-    color: var(--orang-color-dark);
+    color: var(--orange-color);
 }
 
 .green-color
@@ -176,7 +176,9 @@ nav ul li a:hover, nav ul li a.active
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    text-align: center;
     /* height: 646px; */
+    padding-top: 148px;
     margin-bottom: 20px;
  
 }
@@ -189,7 +191,7 @@ nav ul li a:hover, nav ul li a.active
 #banner .banner-content h1
 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: 20px;
     width: 100%;
@@ -197,21 +199,10 @@ nav ul li a:hover, nav ul li a.active
 
 #banner .banner-content h4
 {
-    font-size: 1rem;
-    margin-bottom: 70px;
-    position: relative;
-    padding-right: 130px;
-    width: max-content;
+    font-size: 30px;
+    margin-bottom: 14px;
 }
-#banner .banner-content h4::after {
-    content: "";
-    position: absolute;
-    top: 14px;
-    width: 100px;
-    height: 1px;
-    right: 0;
-    background-color: var(--orang-color-dark);
-}
+
 
 #banner .banner-content p
 {
@@ -221,7 +212,7 @@ nav ul li a:hover, nav ul li a.active
     color: #6C6C6C;
 }
 
-#banner .banner-image
+#banner .banner-button
 {
     width: 100%;
     max-width: 500px;
@@ -229,7 +220,7 @@ nav ul li a:hover, nav ul li a.active
     text-align: right;
     order: 0;
 }
-#banner .banner-image .status
+/* #banner .banner-image .status
 {
     position: absolute;
     bottom: 0;
@@ -282,7 +273,7 @@ nav ul li a:hover, nav ul li a.active
 .tutors-list .tutor img
 {
     width: 100%;
-}
+} */
 
 
 #purpose
