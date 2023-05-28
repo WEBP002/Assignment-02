@@ -138,14 +138,12 @@ nav ul li a:hover, nav ul li a.active
     line-height: 32px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 85px 80px rgba(64, 127, 85, 0.08), 0px 25.625px 24.1177px rgba(64, 127, 85, 0.0521271), 0px 10.6433px 10.0172px rgba(64, 127, 85, 0.04), 0px 3.84948px 3.62304px rgba(64, 127, 85, 0.0278729);
-    inherits: true;
 }
 .btn span
 {
     background-color: inherit
 }
-.btn:hover,
-.btn:hover .material-symbols-outlined
+.btn:hover
 {
     background-color: var(--orange-light-color);
     color: var(--white-color);
