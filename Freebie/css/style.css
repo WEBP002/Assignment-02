@@ -251,21 +251,18 @@ nav ul li a:hover, nav ul li a.active
 }
 
 
-#banner .banner-check div::before {
+#banner .banner-check div h5::before {
     font-family: 'Material Symbols Outlined';
     content: "\e876";
-    position:absolute;
-    top: 30px;
-    width: 50px;
-    height:fit-content;
+    position:relative;
     text-align: center;
-    line-height: 52px;
     background-color: var(--gren-color-light);
-    left: 10px;
-    font-size: 30px;
-    border-radius: 10px;
-    color: var(--white-color);   
+    font-size: 10px;
+    border-radius: 50px;
+    color: var(--white-color);
+    margin-right: 5px;
 }
+
 /* #banner .banner-image .status
 {
     position: absolute;
