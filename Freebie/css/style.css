@@ -61,9 +61,8 @@ header {
   /* padding: 20px 0; */
   border-bottom: var(--gray-color) solid 1px;
   margin-bottom: 20px;
-  width: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 90%;
+  margin: auto;
 }
 .logo {
   width: 127px;
@@ -289,10 +288,14 @@ nav ul li a.active {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
-  height: 300px;
-  margin: 0 10% 0 10%;
+  width: 80%;
+  height: 500px;
+  /* width: 1700px;
+  height: 860px; */
+
+  margin: auto;
   background-color: var(--dark-color);
+  border-radius: 100px;
 }
 
 .container {
