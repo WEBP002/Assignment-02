@@ -310,6 +310,15 @@ nav ul li a.active {
   margin-top: 30px;
   border-radius: 60px;
 }
+
+.itembox:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.itembox div {
+  background-color: inherit;
+  margin: 10%;
+}
 .type1 {
   background-color: var(--white-color);
 }
@@ -333,6 +342,13 @@ nav ul li a.active {
 
 main {
   width: 100%;
+}
+
+.icon-img {
+  background-color: inherit;
+  object-fit: contain;
+  width: 40px;
+  height: 40px;
 }
 
 /* .material-symbols-outlined {
