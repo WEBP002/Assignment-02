@@ -366,6 +366,22 @@ p {
   line-height: 67px;
 }
 
+.fstyle6 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.fstyle7 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+}
+
 .container {
   width: 20%;
   height: 90%;
@@ -385,10 +401,6 @@ p {
 
 .container2 div {
   background-color: inherit;
-}
-
-main {
-  width: 100%;
 }
 
 .icon-img {
@@ -445,6 +457,35 @@ span {
   object-fit: cover;
   width: 80%;
   height: 80%;
+}
+
+#plus-minus-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  background-color: inherit;
+  margin: 10%;
+}
+
+#plus-minus-box #box {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+}
+
+#plus-minus-box #box p {
+  margin-left: 5%;
+  width: auto;
+}
+
+.bk-div {
+  background-color: inherit;
+  width: 70%;
 }
 
 /* .material-symbols-outlined {
