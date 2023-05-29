@@ -317,8 +317,18 @@ nav ul li a.active {
 }
 .itembox div {
   background-color: inherit;
-  margin: 10%;
+  margin-left: 10%;
+  border-radius: inherit;
+  width: fit-content;
+  height: fit-content;
 }
+.itembox p {
+  width: fit-content;
+  height: fit-content;
+  background-color: inherit;
+  margin: 0;
+}
+
 .type1 {
   background-color: var(--white-color);
 }
@@ -326,6 +336,36 @@ nav ul li a.active {
   background-color: var(--yellow-color);
 }
 
+.fstyle1 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 96px;
+}
+
+.fstyle2 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.fstyle3 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+.fstyle4 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 24px;
+}
 .container {
   width: 20%;
   height: 90%;
@@ -349,6 +389,17 @@ main {
   object-fit: contain;
   width: 40px;
   height: 40px;
+}
+
+.yellow-color {
+  color: var(--yellow-color);
+}
+.white-color {
+  color: var(--white-color);
+}
+
+span {
+  background-color: inherit;
 }
 
 /* .material-symbols-outlined {
