@@ -193,8 +193,8 @@ nav ul li a.active {
   align-items: center; /* Align the items from the top */
   text-align: center;
   padding-top: 148px;
-  margin-bottom: 20px;
-  width: 100%;
+  margin: 0 auto 5% auto;
+  width: 80%;
   /* margin-left: 20%; */
   /* margin-right: 20%; */
 }
@@ -300,6 +300,9 @@ nav ul li a.active {
 
 .container {
   display: flex;
+}
+main {
+  width: 100%;
 }
 
 /* .material-symbols-outlined {
