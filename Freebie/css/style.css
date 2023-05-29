@@ -114,7 +114,6 @@ nav ul li a.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 5px; */
   width: 350px;
   flex-direction: row;
   background-color: var(--yellow-color);
@@ -122,12 +121,8 @@ nav ul li a.active {
   border-radius: 5000px;
   text-decoration: none;
   text-align: center;
-  /* padding-left: 10%; */
-  /* padding-right: 10%; */
 
-  padding: 22px 50px 24px;
   gap: 70px;
-
   width: 350px;
   height: 78px;
 
@@ -143,6 +138,17 @@ nav ul li a.active {
 }
 .btn span {
   background-color: inherit;
+  margin-left: 8%;
+
+  width: 200;
+}
+.arrow {
+  font-size: 40px !important;
+  margin-right: 5%;
+  margin-left: 0 !important;
+}
+.btn a {
+  width: auto;
 }
 .btn:hover {
   background-color: var(--orange-light-color);
@@ -224,7 +230,7 @@ nav ul li a.active {
   color: #6c6c6c;
 }
 
-#banner .banner-check {
+.banner-check {
   display: flex;
   flex-direction: row; /* Make the main axis horizontal */
   justify-content: center;
@@ -234,8 +240,7 @@ nav ul li a.active {
   position: relative;
   /* order: 2;  Will be placed second */
 }
-
-#banner .banner-check div {
+.banner-check div {
   display: flex; /* The divs will take up 33% of the space */
   margin: 5px;
   flex-direction: row;
@@ -246,7 +251,7 @@ nav ul li a.active {
   padding: 14px 40px 14px 20px;
   position: relative;
   gap: 7px;
-  width: auto;
+  width: fit-content;
   height: 58px;
 }
 
@@ -258,7 +263,7 @@ nav ul li a.active {
   background-color: var(--white-color);
 }
 
-#banner .banner-check div::before {
+.banner-check div::before {
   position: relative;
   font-family: "Material Symbols Outlined";
   content: "\e86c";
@@ -282,21 +287,6 @@ nav ul li a.active {
   height: 70px;
 }
 
-#blackbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 500px;
-  /* width: 1700px;
-  height: 860px; */
-
-  margin: auto;
-  background-color: var(--dark-color);
-  border-radius: 100px;
-}
-
 #r1 {
   display: flex;
   flex-direction: column;
@@ -305,8 +295,8 @@ nav ul li a.active {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 65%;
-  width: 80%;
+  height: 50%;
+  width: 90%;
   margin-top: 30px;
   border-radius: 60px;
 }
@@ -326,6 +316,7 @@ p {
   width: fit-content;
   height: fit-content;
   background-color: inherit;
+  border-radius: inherit;
   margin: 0;
 }
 
@@ -366,6 +357,15 @@ p {
   font-size: 18px;
   line-height: 24px;
 }
+
+.fstyle5 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 67px;
+}
+
 .container {
   width: 20%;
   height: 90%;
@@ -373,11 +373,18 @@ p {
   background-color: inherit;
   border-radius: inherit;
 }
+
 .container2 {
   width: 50%;
   display: flex;
+  flex-direction: column;
   background-color: inherit;
   border-radius: inherit;
+  margin-left: 5%;
+}
+
+.container2 div {
+  background-color: inherit;
 }
 
 main {
@@ -387,19 +394,57 @@ main {
 .icon-img {
   background-color: inherit;
   object-fit: contain;
+  margin-bottom: 20px;
   width: 40px;
   height: 40px;
 }
 
-.yellow-color {
+.fyellow-color {
   color: var(--yellow-color);
 }
-.white-color {
+.fwhite-color {
   color: var(--white-color);
 }
 
 span {
   background-color: inherit;
+}
+#box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 860px;
+  margin: auto;
+  border-radius: 100px;
+}
+
+.bk-black {
+  background-color: var(--dark-color);
+}
+.bk-white {
+  background-color: var(--white-color);
+}
+
+#box .banner-check {
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 70%;
+}
+#box .banner-check div,
+#box .banner-check div::before {
+  margin: 0 0 3% 0;
+  height: fit-content !important;
+  background-color: var(--beige-color);
+  padding: 0 10px 0 0;
+}
+
+.bk-img {
+  background-color: inherit;
+  object-fit: cover;
+  width: 80%;
+  height: 80%;
 }
 
 /* .material-symbols-outlined {
