@@ -285,7 +285,6 @@ nav ul li a.active {
 #blackbox {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   width: 80%;
@@ -298,8 +297,29 @@ nav ul li a.active {
   border-radius: 100px;
 }
 
-.container {
+#r1 {
   display: flex;
+  flex-direction: column;
+}
+.itembox {
+  position: relative;
+  height: 240px;
+  width: 90%;
+  margin-top: 30px;
+  border-radius: 60px;
+}
+.type1 {
+  background-color: var(--white-color);
+}
+.type2 {
+  background-color: var(--yellow-color);
+}
+
+.container {
+  width: 30%;
+  height: 90%;
+  margin: auto;
+  background-color: inherit;
 }
 main {
   width: 100%;
