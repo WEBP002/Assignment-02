@@ -305,7 +305,7 @@ nav ul li a.active {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 60%;
+  height: 65%;
   width: 80%;
   margin-top: 30px;
   border-radius: 60px;
@@ -317,12 +317,12 @@ nav ul li a.active {
 }
 .itembox div {
   background-color: inherit;
-  margin-left: 10%;
+  margin-left: 15%;
   border-radius: inherit;
   width: fit-content;
   height: fit-content;
 }
-.itembox p {
+p {
   width: fit-content;
   height: fit-content;
   background-color: inherit;
