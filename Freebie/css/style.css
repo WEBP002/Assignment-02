@@ -120,6 +120,8 @@ nav ul li a.active {
   text-decoration: none;
   text-align: center;
 
+  margin-top:30px;
+
   gap: 70px;
   width: 350px;
   height: 78px;
@@ -405,10 +407,12 @@ div {
 
 .container3 {
   width: 500px;
+  height: fit-content;
   padding: 0 20px;
   margin: 0 10px;
   display: flex;
-  background-color: inherit;
+  background-color: transparent
+  justify-content: center;
   flex-direction: column;
   border-radius: inherit;
 }
@@ -440,7 +444,7 @@ div {
 span {
   background-color: inherit;
 }
-#box {
+.box {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -449,7 +453,7 @@ span {
   padding: 25px;
   width: 100%;
   height: 500px;
-  margin: auto;
+  margin: auto auto 100px auto;
   border-radius: 100px;
 }
 
@@ -459,6 +463,9 @@ span {
 .bk-white {
   background-color: var(--white-color);
   height: auto !important;
+}
+.bk-yellow {
+  background-color: var(--yellow-color);
 }
 
 #box .banner-check {
@@ -476,6 +483,7 @@ span {
 
 #box.bk-white {
   justify-content: space-between;
+  height: fit-content !important;
 }
 
 .bk-img {
@@ -498,18 +506,8 @@ span {
   margin: auto;
 }
 
-#plus-minus-box #box {
-  width: 100%;
-  height: 200px;
-  margin-top: 20px;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 50px;
-}
-
-#plus-minus-box #box p {
-  margin-left: 5%;
-  width: auto;
+#plus-minus-box div{
+  margin-bottom: 30px;
 }
 
 .bk-div {
@@ -517,7 +515,7 @@ span {
   width: 90%;
 }
 
-footer#box {
+footer.box {
   margin-top: 200px;
   display: flex;
   padding: 0 5%;
@@ -528,7 +526,7 @@ footer#box {
   align-items: center;
 }
 footer .container {
-  background-color: inherit;
+  background-color: transparent;
   width: 100%;
   height: auto;
   align-items: center;
@@ -541,6 +539,13 @@ footer .container {
 #footertop {
   border-bottom: var(--gray-color) solid 1px;
   padding: 10px;
+}
+
+#yellowbox .container3{
+  padding: 30px 50px;
+}
+#yellowbox.box{
+  justify-content: space-between;
 }
 
 /* .material-symbols-outlined {
