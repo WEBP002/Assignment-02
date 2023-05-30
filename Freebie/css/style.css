@@ -297,7 +297,8 @@ nav ul li a.active {
   position: relative;
   height: 270px;
   width: 220px;
-  margin-bottom: 30px;
+
+  margin-right: 20px;
   border-radius: 60px;
   padding: 20px;
 }
@@ -388,8 +389,10 @@ div {
 }
 
 .container {
-  width: 250px;
-  height: auto;
+  display: flex;
+  width: auto;
+  height: fit-content;
+  flex-wrap: wrap;
   margin: 0;
   padding: 10px;
   background-color: transparent;
@@ -447,10 +450,10 @@ span {
 .box {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 25px;
+  padding: 25px 40px;
   width: 100%;
   height: 500px;
   margin: auto auto 100px auto;
@@ -546,6 +549,12 @@ footer .container {
 }
 #yellowbox.box {
   justify-content: space-between;
+}
+
+#blackboxlist {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 /* .material-symbols-outlined {
@@ -670,8 +679,23 @@ footer .container {
 }
 
 @media (max-width: 1122px) {
-  #box {
+  .box {
     height: auto !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .container {
+    width: 100% !important;
+    justify-content: center;
+  }
+  .container3 {
+    margin: 0;
+    padding: 20px !important;
+  }
+  .btn {
+    margin: 0;
+    padding: 3px;
   }
 }
 
