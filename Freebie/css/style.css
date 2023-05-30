@@ -120,7 +120,7 @@ nav ul li a.active {
   text-decoration: none;
   text-align: center;
 
-  margin-top:30px;
+  margin-top: 30px;
 
   gap: 70px;
   width: 350px;
@@ -411,7 +411,7 @@ div {
   padding: 0 20px;
   margin: 0 10px;
   display: flex;
-  background-color: transparent
+  background-color: transparent;
   justify-content: center;
   flex-direction: column;
   border-radius: inherit;
@@ -506,7 +506,7 @@ span {
   margin: auto;
 }
 
-#plus-minus-box div{
+#plus-minus-box div {
   margin-bottom: 30px;
 }
 
@@ -541,10 +541,10 @@ footer .container {
   padding: 10px;
 }
 
-#yellowbox .container3{
+#yellowbox .container3 {
   padding: 30px 50px;
 }
-#yellowbox.box{
+#yellowbox.box {
   justify-content: space-between;
 }
 
