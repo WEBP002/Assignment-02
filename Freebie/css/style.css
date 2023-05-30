@@ -60,6 +60,7 @@ header {
   width: 90%;
   margin: auto;
 }
+
 .logo {
   width: 127px;
 }
@@ -312,9 +313,13 @@ nav ul li a.active {
 p {
   width: fit-content;
   height: fit-content;
-  background-color: inherit;
+  background-color: transparent;
   border-radius: inherit;
   margin: 0;
+}
+
+div {
+  background-color: transparent;
 }
 
 .type1 {
@@ -374,8 +379,8 @@ p {
 .fstyle7 {
   font-family: "Segoe UI";
   font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
+  font-weight: 300;
+  font-size: 25px;
   line-height: 40px;
 }
 
@@ -392,15 +397,30 @@ p {
   width: 400px;
   display: flex;
   flex-direction: column;
-  background-color: inherit;
+  background-color: transparent;
   border-radius: inherit;
   margin-left: 5%;
+}
+
+.container3 {
+  width: 500px;
+  padding: 0 20px;
+  margin: 0 10px;
+  display: flex;
+  background-color: inherit;
+  flex-direction: column;
+  border-radius: inherit;
 }
 
 .container2 div {
   background-color: inherit;
 }
 
+.container3 div {
+  background-color: inherit;
+  text-align: left;
+  width: fit-content;
+}
 .icon-img {
   background-color: inherit;
   object-fit: contain;
@@ -437,12 +457,13 @@ span {
 }
 .bk-white {
   background-color: var(--white-color);
+  height: auto !important;
 }
 
 #box .banner-check {
   flex-direction: row;
   justify-content: flex-start;
-  width: 70%;
+  width: 100%;
 }
 #box .banner-check div,
 #box .banner-check div::before {
@@ -452,11 +473,18 @@ span {
   padding: 0 10px 0 0;
 }
 
+#box.bk-white {
+  justify-content: space-between;
+}
+
 .bk-img {
   background-color: inherit;
   object-fit: cover;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: auto;
+}
+.justify-center {
+  justify-content: center;
 }
 
 #plus-minus-box {
@@ -485,7 +513,7 @@ span {
 
 .bk-div {
   background-color: inherit;
-  width: 70%;
+  width: 90%;
 }
 
 /* .material-symbols-outlined {
@@ -609,12 +637,19 @@ span {
   position: relative;
 }
 
+@media (max-width: 1122px) {
+  #box {
+    height: auto !important;
+  }
+}
+
 /* mobile menu */
 nav.mobile-nav,
 .mobile-menu-container {
   display: none;
 }
-/* 
+
+/*
 @media (max-width: 1100px) {
   .wrapper {
     padding: 0;
