@@ -39,6 +39,8 @@ img {
   max-width: 100%;
 }
 .wrapper {
+  background-image: url("/img/background.png");
+  background-size: cover;
   max-width: 1122px;
   margin: auto;
 }
@@ -522,11 +524,20 @@ span {
   justify-content: center;
   align-items: center;
 }
+#ajussibox:hover {
+  background-image: url("/img/ajussibg.jpg");
+  background-size: 1200px;
+  background-position: center;
+  color: var(--white-color);
+}
+#ajussibox div {
+  background-color: transparent;
+}
 
 #ajussibox img {
   width: 300px;
   height: 300px;
-  border-radius: 100px;
+  border-radius: 200px;
   margin: 0 20px;
 }
 #ajussi-ex {
