@@ -24,6 +24,10 @@
   font-family: "Poppins", sans-serif;
   background-color: var(--beige-lighter-color);
 }
+html {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -304,11 +308,16 @@ nav ul li a.active {
   border-radius: 60px;
   padding: 20px;
 }
-
 .itembox:hover {
+  background-color: #000;
+  color: var(--white-color);
+  transition: linear 0.5s;
+}
+
+/* .itembox:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
+} */
 .itembox div {
   background-color: inherit;
   border-radius: inherit;
@@ -393,7 +402,7 @@ div {
 .container {
   display: flex;
   width: auto;
-  height: fit-content;
+  height: auto;
   flex-wrap: wrap;
   margin: 0;
   padding: 10px;
@@ -859,80 +868,3 @@ nav.mobile-nav,
 .mobile-menu-container {
   display: none;
 }
-
-/*
-@media (max-width: 1100px) {
-  .wrapper {
-    padding: 0;
-  }
-}
-
-@media (max-width: 800px) {
-  .wrapper {
-    padding: 0 20px;
-  }
-
-  #banner .banner-content,
-  #banner .banner-image,
-  #purpose .purpose-image,
-  #purpose .purpose-content {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  nav {
-    display: none;
-  }
-
-  nav.mobile-nav {
-    display: flex;
-  }
-
-  .mobile-menu-container {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 100%;
-    background: var(--dark-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 200;
-    transition: all 400ms ease;
-  }
-
-  .mobile-menu-container.active {
-    left: 0;
-  }
-
-  .mobile-menu-container .close-icon {
-    position: fixed;
-    top: 32px;
-    right: 100px;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 400ms ease;
-  }
-
-  .mobile-menu-container.active .close-icon {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .mobile-menu-container ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .mobile-menu-container ul li {
-    margin: 30px 0;
-    text-align: center;
-  }
-
-  .mobile-menu-container ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-  }
-} */
