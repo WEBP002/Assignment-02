@@ -478,6 +478,9 @@ span {
   background-color: var(--white-color);
   height: auto !important;
 }
+.bk-beige {
+  background-color: var(--beige-color) !important;
+}
 .bk-div {
   width: 90%;
 }
@@ -512,6 +515,11 @@ span {
 }
 .justify-center {
   justify-content: center;
+}
+
+#whitebox .banner-check div,
+#whitebox .banner-check div::before {
+  background-color: var(--beige-color);
 }
 
 #plus-minus-box {
