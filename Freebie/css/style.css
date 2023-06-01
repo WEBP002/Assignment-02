@@ -494,15 +494,8 @@ span {
   justify-content: flex-start;
   width: 100%;
 }
-#box .banner-check div,
-#box .banner-check div::before {
-  margin: 0 0 3% 0;
-  height: fit-content !important;
-  background-color: var(--beige-color);
-  padding: 0 10px 0 0;
-}
 
-#box.bk-white {
+.box.bk-white {
   justify-content: space-between;
   height: fit-content !important;
 }
@@ -532,8 +525,10 @@ span {
   margin: auto;
 }
 
-#plus-minus-box div {
+#plus-minus-box .box {
   margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #ajussibox {
@@ -549,6 +544,7 @@ span {
 
   transition: ease-in 0.5s;
 }
+
 #ajussibox div {
   background-color: transparent;
 }
