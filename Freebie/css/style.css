@@ -560,7 +560,7 @@ footer.box {
   display: flex;
   padding: 0 5%;
   width: 100%;
-  height: 200px !important;
+  height: 200px;
   flex-direction: column;
   border-radius: 60px;
   align-items: center;
