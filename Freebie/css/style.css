@@ -43,7 +43,7 @@ img {
   max-width: 100%;
 }
 .wrapper {
-  background-image: url("/img/background.png");
+  background-image: url("imgages/background.png");
   background-size: cover;
   max-width: 1122px;
   margin: auto;
@@ -534,7 +534,7 @@ span {
   align-items: center;
 }
 #ajussibox:hover {
-  background-image: url("/img/ajussibg.jpg");
+  background-image: url("images/ajussibg.jpg");
   background-size: 1200px;
   background-position: center;
   color: var(--white-color);
