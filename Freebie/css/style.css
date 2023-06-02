@@ -137,16 +137,11 @@ nav ul li a.active {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 85px 80px rgba(64, 127, 85, 0.08),
-    0px 25.625px 24.1177px rgba(64, 127, 85, 0.0521271),
-    0px 10.6433px 10.0172px rgba(64, 127, 85, 0.04),
-    0px 3.84948px 3.62304px rgba(64, 127, 85, 0.0278729);
 }
 .btn span {
   background-color: inherit;
   margin: 0px;
-  width: auto;
+  width: 80%;
 }
 .arrow {
   font-size: 40px !important;
@@ -154,13 +149,20 @@ nav ul li a.active {
   margin-left: 0 !important;
 }
 .btn a {
-  width: auto;
+  width: 100%;
 }
 .btn:hover .rotating-arrow {
   animation: swingAnimation90 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
+
 .btn:hover {
-  box-shadow: 2px 10px 10px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px;
+  border: 3px solid;
+}
+
+.bk-black .btn:hover {
+  box-shadow: 10px 10px var(--yellow-color);
+  border: 3px var(--yellow-color) solid;
 }
 .rotating-arrow {
   display: inline;
