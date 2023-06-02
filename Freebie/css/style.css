@@ -852,3 +852,21 @@ footer .container {
  * animation bounce-in-bottom
  * ----------------------------------------
  */
+.typing-effect {
+  overflow: hidden; /* Ensure the text stays within the container */
+  white-space: nowrap; /* Prevent line breaks */
+  border-right: 2px solid var(--dark-color); /* Initial border - invisible */
+  animation: typing 4s steps(20) forwards infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
