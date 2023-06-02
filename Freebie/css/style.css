@@ -870,3 +870,21 @@ footer .container {
     width: 0;
   }
 }
+
+
+/* 여자이미지 */
+.woman {
+  position: relative;
+}
+.moving {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+.woman:hover .moving {
+  display: block;
+}
+.woman:hover .notmoving {
+  display: none;
+}
