@@ -492,6 +492,10 @@ span {
   background-color: var(--yellow-color);
 }
 
+.fc-white {
+  color: var(--white-color);
+}
+
 #box .banner-check {
   flex-direction: row;
   justify-content: flex-start;
