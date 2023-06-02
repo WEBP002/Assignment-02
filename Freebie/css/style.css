@@ -557,7 +557,6 @@ span {
 }
 .bk-white {
   background-color: var(--white-color);
-  height: auto !important;
 }
 .bk-beige {
   background-color: var(--beige-color) !important;
@@ -572,6 +571,10 @@ span {
 
 .fc-white {
   color: var(--white-color);
+}
+
+.autoh {
+  height: auto !important;
 }
 
 #box .banner-check {
