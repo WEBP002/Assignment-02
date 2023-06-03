@@ -300,25 +300,52 @@ nav ul li a.active {
 .itembox {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: relative;
   height: 270px;
   width: 220px;
-
   margin-right: 20px;
   border-radius: 60px;
   padding: 20px;
+  overflow: hidden;
+  background: transparent; 
+  transition: .4s;
+  color: black; 
+}
 
+.itembox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(#262626 0 0) no-repeat;
   background-size: 100% 0%;
   background-position: 0% 100%;
+  border-radius: inherit;
   transition: .4s;
+  z-index: 1;
 }
+
 .itembox:hover {
-  background-size: 100% 100%;
-  transition: .3s;
   color: white;
   cursor: pointer;
 }
+
+.itembox:hover::before {
+  transform: translateY(0);
+  background-size: 100% 100%;
+  animation: slide-bounce 0.5s ease-in-out;
+  transition: .3s;
+}
+
+.itembox * {
+  position: relative;
+  z-index: 2;
+}
+
+
 
 .itembox div {
   /* background-color: inherit; */
@@ -559,7 +586,7 @@ span {
   transform: translateY(100%);
   transition: transform 0.2s;
   z-index: 1;
-  border-radius: 60px;
+  border-radius: inherit;
 }
 
 #ajussibox:hover .ajussi-back::before {
