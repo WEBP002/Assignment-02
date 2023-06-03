@@ -64,7 +64,6 @@ h6 {
 header {
   display: flex;
   justify-content: space-between;
-  /* padding: 20px 0; */
   border-bottom: var(--gray-color) solid 1px;
   margin-bottom: 20px;
   width: 100%;
@@ -248,31 +247,6 @@ nav ul li a.active {
   }
 }
 
-/* .btn.green-btn
-{
-    background-color: var(--green-color);
-}
-
-.btn.green-btn:hover
-{
-    background-color: var(--dark-color);
-}
-.btn.green-light-btn{
-    background-color: var(--yellow-color);
-}
-
-.btn.green-light-btn:hover
-{
-    background-color: var(--dark-color);
-}
-.btn-lg
-{
-    /* padding: 10px; */
-/* min-width: 200px; */
-/* font-weight: 600;
-    border-radius: 16px;
-    width: 250px;
-} */
 
 .br-large {
   border-radius: 5000px;
@@ -287,21 +261,18 @@ nav ul li a.active {
 
 #banner {
   display: flex;
-  flex-direction: column; /* Make the main axis vertical */
+  flex-direction: column; 
   justify-content: center;
-  align-items: center; /* Align the items from the top */
+  align-items: center; 
   text-align: center;
   padding-top: 148px;
   margin: 0 auto 5% auto;
   width: 80%;
-  /* margin-left: 20%; */
-  /* margin-right: 20%; */
 }
 
 #banner .banner-content {
-  flex: 1 0 auto; /* Flex-grow is set to 1, flex-shrink is set to 0, flex-basis is set to auto */
+  flex: 1 0 auto; 
   max-width: 500px;
-  /* order: 1;  Will be placed first */
 }
 
 #banner .banner-content h1 {
@@ -325,16 +296,15 @@ nav ul li a.active {
 
 .banner-check {
   display: flex;
-  flex-direction: row; /* Make the main axis horizontal */
+  flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap; /* Wrap the items onto the next line if they don't fit */
-  flex: 1 0 auto; /* Flex-grow is set to 1, flex-shrink is set to 0, flex-basis is set to auto */
-  /* max-width: fit-content; */
+  flex-wrap: wrap; 
+  flex: 1 0 auto;
   position: relative;
-  /* order: 2;  Will be placed second */
 }
+
 .banner-check div {
-  display: flex; /* The divs will take up 33% of the space */
+  display: flex;
   margin: 5px;
   flex-direction: row;
   align-items: center;
@@ -368,12 +338,10 @@ nav ul li a.active {
 }
 
 #banner .banner-btn {
-  /* background-color: var(--yellow-color); */
   display: flex;
-  flex-direction: row; /* Make the main axis horizontal */
-  /* justify-content:space-between; */
-  flex-wrap: wrap; /* Wrap the items onto the next line if they don't fit */
-  flex: 1 0 auto; /* Flex-grow is set to 1, flex-shrink is set to 0, flex-basis is set to auto */
+  flex-direction: row; 
+  flex-wrap: wrap;
+  flex: 1 0 auto;
   margin-top: 60px;
   position: relative;
   width: 350px;
@@ -433,7 +401,6 @@ nav ul li a.active {
 }
 
 .itembox div {
-  /* background-color: inherit; */
   border-radius: inherit;
   width: fit-content;
   height: fit-content;
@@ -731,34 +698,6 @@ span {
   color: var(--yellow-color);
 }
 
-/* #ajussibox .content
-{
-    position: absolute ;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    padding: 50px;
-}
-.ajussibox:hover{
-
-    cursor: pointer;
-} */
-
-/* .image {
-  width: 100%;
-  height: 100%;
-  background-image: url('../images/ajussibg.jpg');
-  background-size: cover;
-  background-position: center;
-  transform: translateY(100%);
-  transition: transform 0.2s;
-  } */
-
-/* .image-container:hover .image {
-  transform: translateY(0);
-  animation: slide-bounce 0.5s ease-in-out;
-  } */
-
 #ajussi-ex {
   width: 500px;
 }
@@ -801,83 +740,6 @@ footer .container {
   flex-direction: column;
   flex-wrap: wrap;
 }
-
-/* .material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48;
-    background-color: var(--yellow-color);
-} */
-
-/* #banner .banner-btn::after
-{
-    position: absolute;
-    font-family: 'Segoe UI';
-    content: "\e2794";
-    /* border: var(--dark-color); 
-    background-color: var(--yellow-color);
-    font-size: 24.96px;
-    border-radius: 50px;
-    color: var(--dark-color);
-} 
-*/
-
-/* #banner .banner-image .status
-{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 237px;
-    height: 121px;
-    text-align: center;
-    color: var(--dark-color); 
-    background-color: var(--white-color);
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-}
-#banner .banner-image .material-symbols-outlined
-{
-    position: absolute;
-    bottom: 94px;
-    left: -15px;
-    width: 45px;
-    height: 45px;
-    color: var(--white-color); 
-    background-color: var(--gren-color-light);
-    padding: 5px;
-    z-index: 100;
-    font-size: 35px;
-    border-radius: 10px;
-
-}
-.tutors-list
-{
-    display: block;
-    align-items: center;
-    padding-left: 40px;
-    
-}
-.tutors-list .tutor
-{
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    background-color: var(--white-color);
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 360px;
-    margin-left: -24px;
-    text-align: center;
-    line-height:50px;
-    color: var(--white-color);
-    background-color: var(--gren-color-light);
-    overflow: hidden;
-
-}
-.tutors-list .tutor img
-{
-    width: 100%;
-} */
 
 #purpose {
   display: flex;
@@ -953,22 +815,10 @@ footer .container {
   }
 }
 
-/* ----------------------------------------------
- * Generated by Animista on 2023-5-31 1:53:7
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation bounce-in-bottom
- * ----------------------------------------
- */
 .typing-effect {
-  overflow: hidden; /* Ensure the text stays within the container */
-  white-space: nowrap; /* Prevent line breaks */
-  border-right: 2px solid var(--dark-color); /* Initial border - invisible */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--dark-color);
   animation: typing 4s steps(20) forwards infinite;
 }
 
@@ -984,7 +834,6 @@ footer .container {
   }
 }
 
-/* 여자이미지 */
 .woman {
   position: relative;
   text-align: center;
