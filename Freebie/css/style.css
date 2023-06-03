@@ -22,7 +22,7 @@
 *::after {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-color: var(--beige-lighter-color);
+  background-color: transparent;
 }
 html {
   margin: 0;
@@ -33,7 +33,8 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--beige-lighter-color);
+  background-image: url("../images/background.jpg") !important;
+
   color: var(--dark-color);
   font-size: 1rem;
   font-weight: 400;
@@ -43,11 +44,13 @@ img {
   max-width: 100%;
 }
 .wrapper {
-  background-image: url("imgages/background.png");
-  background-size: cover;
   max-width: 1122px;
   margin: auto;
 }
+main {
+  background-color: transparent !important;
+}
+
 h1,
 h2,
 h3,
@@ -392,13 +395,13 @@ nav ul li a.active {
   border-radius: 60px;
   padding: 20px;
   overflow: hidden;
-  background: transparent; 
-  transition: .4s;
-  color: black; 
+  background: transparent;
+  transition: 0.4s;
+  color: black;
 }
 
 .itembox::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -408,7 +411,7 @@ nav ul li a.active {
   background-size: 100% 0%;
   background-position: 0% 100%;
   border-radius: inherit;
-  transition: .4s;
+  transition: 0.4s;
   z-index: 1;
 }
 
@@ -421,15 +424,13 @@ nav ul li a.active {
   transform: translateY(0);
   background-size: 100% 100%;
   animation: slide-bounce 0.5s ease-in-out;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .itembox * {
   position: relative;
   z-index: 2;
 }
-
-
 
 .itembox div {
   /* background-color: inherit; */
@@ -636,8 +637,8 @@ span {
 }
 
 #plus-minus-box {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   height: auto;
@@ -653,7 +654,7 @@ span {
 
 #ajussibox {
   overflow: hidden;
-  padding:0% 0%
+  padding: 0% 0%;
 }
 
 .ajussi-back {
@@ -669,13 +670,14 @@ span {
 }
 
 .ajussi-back::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/ajussibg.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/ajussibg.jpg");
   background-size: cover;
   background-position: center;
   transform: translateY(100%);
@@ -691,23 +693,24 @@ span {
 
 @keyframes slide-bounce {
   0% {
-      transform: translateY(100%);
+    transform: translateY(100%);
   }
   25% {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   50% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   75% {
-      transform: translateY(-5px);
+    transform: translateY(-5px);
   }
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
-#ajussibox div, #ajussibox img {
+#ajussibox div,
+#ajussibox img {
   position: relative;
   z-index: 2;
 }
@@ -728,8 +731,6 @@ span {
   color: var(--yellow-color);
 }
 
-
-
 /* #ajussibox .content
 {
     position: absolute ;
@@ -743,9 +744,6 @@ span {
     cursor: pointer;
 } */
 
-
-
-
 /* .image {
   width: 100%;
   height: 100%;
@@ -756,7 +754,7 @@ span {
   transition: transform 0.2s;
   } */
 
-  /* .image-container:hover .image {
+/* .image-container:hover .image {
   transform: translateY(0);
   animation: slide-bounce 0.5s ease-in-out;
   } */
@@ -985,7 +983,6 @@ footer .container {
     width: 0;
   }
 }
-
 
 /* 여자이미지 */
 .woman {
