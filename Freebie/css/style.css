@@ -300,26 +300,55 @@ nav ul li a.active {
 .itembox {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: relative;
   height: 270px;
   width: 220px;
-
   margin-right: 20px;
   border-radius: 60px;
   padding: 20px;
-}
-.itembox:hover {
-  background-color: #000;
-  color: var(--white-color);
-  transition: linear 0.5s;
+  overflow: hidden;
+  background: transparent; 
+  transition: .4s;
+  color: black; 
 }
 
-/* .itembox:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-} */
+.itembox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(#262626 0 0) no-repeat;
+  background-size: 100% 0%;
+  background-position: 0% 100%;
+  border-radius: inherit;
+  transition: .4s;
+  z-index: 1;
+}
+
+.itembox:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.itembox:hover::before {
+  transform: translateY(0);
+  background-size: 100% 100%;
+  animation: slide-bounce 0.5s ease-in-out;
+  transition: .3s;
+}
+
+.itembox * {
+  position: relative;
+  z-index: 2;
+}
+
+
+
 .itembox div {
-  background-color: inherit;
+  /* background-color: inherit; */
   border-radius: inherit;
   width: fit-content;
   height: fit-content;
@@ -515,8 +544,8 @@ span {
 }
 
 #plus-minus-box {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   align-items: center;
   width: 100%;
   height: auto;
@@ -529,20 +558,63 @@ span {
 }
 
 #ajussibox {
+  overflow: hidden;
+}
+
+.ajussi-back {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: inherit;
+  overflow: hidden;
+  position: relative;
 }
-#ajussibox:hover {
-  background-image: url("../images/ajussibg.jpg");
-  background-size: 1200px;
-  background-position: center;
-  color: var(--white-color);
 
-  transition: ease-in 0.5s;
+.ajussi-back::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/ajussibg.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: translateY(100%);
+  transition: transform 0.2s;
+  z-index: 1;
+  border-radius: inherit;
 }
-#ajussibox div {
-  background-color: transparent;
+
+#ajussibox:hover .ajussi-back::before {
+  transform: translateY(0);
+  animation: slide-bounce 0.5s ease-in-out;
+}
+
+@keyframes slide-bounce {
+  0% {
+      transform: translateY(100%);
+  }
+  25% {
+      transform: translateY(-10px);
+  }
+  50% {
+      transform: translateY(0);
+  }
+  75% {
+      transform: translateY(-5px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+#ajussibox div, #ajussibox img {
+  position: relative;
+  z-index: 2;
 }
 
 #ajussibox img {
@@ -551,6 +623,49 @@ span {
   border-radius: 200px;
   margin: 0 20px;
 }
+
+#ajussibox:hover h3,
+#ajussibox:hover p {
+  color: var(--white-color);
+}
+
+#ajussibox:hover h4 {
+  color: var(--yellow-color);
+}
+
+
+
+/* #ajussibox .content
+{
+    position: absolute ;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 50px;
+}
+.ajussibox:hover{
+
+    cursor: pointer;
+} */
+
+
+
+
+/* .image {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/ajussibg.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: translateY(100%);
+  transition: transform 0.2s;
+  } */
+
+  /* .image-container:hover .image {
+  transform: translateY(0);
+  animation: slide-bounce 0.5s ease-in-out;
+  } */
+
 #ajussi-ex {
   width: 500px;
 }
