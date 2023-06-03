@@ -517,8 +517,8 @@ span {
 }
 
 #plus-minus-box {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   align-items: center;
   width: 100%;
   height: auto;
@@ -531,11 +531,59 @@ span {
 }
 
 #ajussibox {
+  overflow: hidden;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.ajussi-back{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  background-color: white;
+}
+
+#ajussibox:hover {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-image: url("../images/ajussibg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+
+  transform: translateY(0);
+  /* animation: slide-bounce 0.5s ease-in-out; */
+  transition: ease-in 0.5s;
+}
+
+@keyframes slide-bounce {
+  0% {
+      transform: translateY(100%);
+  }
+  25% {
+      transform: translateY(-10px);
+  }
+  50% {
+      transform: translateY(0);
+  }
+  75% {
+      transform: translateY(-5px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+  }
+
+#ajussibox div {
+  background-color: transparent;
+}
+
+#ajussibox img {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  margin: 0 20px;
 }
 
 /* #ajussibox .content
@@ -552,24 +600,7 @@ span {
 } */
 
 
-#ajussibox:hover {
-  background-image: url("../images/ajussibg.jpg");
-  background-size: cover;
-  background-position: center;
-  color: var(--white-color);
 
-  transition: ease-in 0.5s;
-}
-#ajussibox div {
-  background-color: transparent;
-}
-
-#ajussibox img {
-  width: 300px;
-  height: 300px;
-  border-radius: 200px;
-  margin: 0 20px;
-}
 
 /* .image {
   width: 100%;
